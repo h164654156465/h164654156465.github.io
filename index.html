@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Martin Lu's portofolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/index.css">
+</head>
+
+<body>
+    <div id="loading">
+        <div id="spinner" class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">Martin Lu</td>
+                <td id="navigation">
+                    <a href="#about">About</a>
+                    <a href="#exp">Experience</a>
+                    <a href="#event">Event</a>
+                    <a href="#work">Work</a>
+                    <a id="last-a" href="#contact">Contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <div class="container-md pl-2">
+        <table id="top_part">
+            <tr class="row">
+                <td id="intro" class="animated slideInLeft col-md-5" style="animation-delay:2s;">
+                    Hi, my name is<br>
+                    <h1>Martin Lu</h1>
+                    <button class="btn_one">Download <br>resume</button><br>
+                    <table>
+                        <tr>
+                            <td class="animated zoomIn" style="animation-delay:2.4s;"><a
+                                    href="https://www.linkedin.com/in/chia-chi1998/" class="social"><i
+                                        class="fab fa-linkedin"></i></a></td>
+                            <td class="animated zoomIn" style="animation-delay:2.2s;"><a
+                                    href="https://github.com/h164654156465" class="social"><i
+                                        class="fab fa-github"></i></a>
+                            </td>
+                            <td class="animated zoomIn" style="animation-delay:2.2s;"><a
+                                    href="https://www.facebook.com/chiachi.lui" class="social"><i
+                                        class="fab fa-facebook"></i></a></td>
+                        </tr>
+                    </table>
+                </td>
+                <td id="rightImage" class="animated jackInTheBox col-md-7" style="animation-delay:2.2s;"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="about" class="container-md pl-2">
+        <span class="sec-header">About</span>
+        <div class="mt-4">Data enthusiast with over 4 years of experience specializing in data science and app development. I'm well
+            versed in data science process and have the ability to implement machine learning system on Azure or at
+            the edge. Adept with a wide variety of machine learning application, including distributed computing, text
+            analytics, and computer vision.</div>
+        <div class="mt-3">Recently, I'm working with below technologies:
+            <ul class="mt-2">
+                <li>Python</li>
+                <li>Azure</li>
+                <li>Data science</li>
+                <li>Spark</li>
+                <li>Node.js</li>
+                <li>Javascript</li>
+                <li>SQL</li>
+                <li>React.js</li>
+                <li>Electron</li>
+            </ul>
+        </div>
+    </div>
+    <div id="exp" class="container-md pl-2">
+        <span class="sec-header">Experience</span>
+        <div class="card my-5 py-4 px-4">
+            <div class="row no-gutters">
+                <div class="col-md-4" style="margin: auto;">
+                    <a href="https://www.microsoft.com/en-us/"><img src="src/assets/ms_logo.png" class="card-img"
+                            alt="Microsft Corporation"></a>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">Technical Assistant Intern</h3>
+                        <div>Microsoft Corporation, Taiwan</div>
+                        <p class="card-text text-muted">Jul 2019 - Present</p>
+                        <p class="card-text">
+                            <ul>
+                                <li>Implemented and studied data/AI/cognitive service on Azure</li>
+                                <li>Collaborated with full-time employees to develop POC for Gamania Group and
+                                    sucessfully persuaded them to adopte our suggestion for further cooperation.</li>
+                                <li>Guided hundreds of customers through Microsoft demo area and introduced them
+                                    solution provided by Microsoft parters and latest
+                                    technologies on Azure.</li>
+                            </ul>
+                        </p>
+                        <div class="tags">
+                            <span class="tag">azure</span>
+                            <span class="tag">python</span>
+                            <span class="tag">data science</span>
+                            <span class="tag">ai</span>
+                            <span class="tag">javascript</span>
+                            <span class="tag">azure ml service</span>
+                            <span class="tag">azure cogni service</span>
+                            <span class="tag">nodejs</span>
+                            <span class="tag">sql</span>
+                            <span class="tag">spark</span>
+                            <span class="tag">iot</span>
+                            <span class="tag">databricks</span>
+                            <span class="tag">container</span>
+                            <span class="tag">k8s</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card my-5 py-4 px-4">
+            <div class="row no-gutters">
+                <div class="col-md-4" style="margin: auto;">
+                    <a href="http://bigrlab.herokuapp.com/"><img src="src/assets/bigrlab.png" class="card-img"
+                            alt="..."></a>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">Research Assistant</h3>
+                        <div>BIGRLAB, NCU</div>
+                        <p class="card-text text-muted">Sep 2018 - Apr 2019</p>
+                        <p class="card-text">
+                            <ul>
+                                <li>Developed a LINE Messaging API, namely LINE Bot, application for social retail
+                                    marketing.</li>
+                                <li>Built a customer purchacing model based on chatroom messages to analyze customer
+                                    buying behavior.</li>
+                                <li>Built and configured a backend server using Flask to host the purchacing model.</li>
+                            </ul>
+                        </p>
+                        <div class="tags">
+                            <span class="tag">linebot</span>
+                            <span class="tag">text mining</span>
+                            <span class="tag">flask</span>
+                            <span class="tag">python</span>
+                            <span class="tag">javascript</span>
+                            <span class="tag">apache2 web server</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card my-5 py-4 px-4">
+            <div class="row no-gutters">
+                <div class="col-md-4" style="margin: auto;">
+                    <a href="https://www.itri.org.tw/"><img src="src/assets/itri_logo.png" class="card-img"
+                            alt="..."></a>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">Intern</h3>
+                        <div>DIGI+Talent Accelerator & Jumpstart Program, Industrial Technology Research Institute(ITRI)
+                        </div>
+                        <p class="card-text text-muted">Jun 2018 - Dec 2018</p>
+                        <p class="card-text">
+                            <ul>
+                                <li>Developed a web application with other interns using Django, helping users easily
+                                    observe keyword trend right inside the website.</li>
+                                <li>Designed and integrated team's development workflow using Git</li>
+                                <li>Implemented API call to Google Trend, rendering the returned data as run chart.</li>
+                            </ul>
+                            <div class="tags">
+                                <span class="tag">web application</span>
+                                <span class="tag">django</span>
+                                <span class="tag">data visualization</span>
+                                <span class="tag">git</span>
+                                <span class="tag">google trend</span>
+                                <span class="tag">sql</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card my-5 py-4 px-4">
+            <div class="row no-gutters">
+                <div class="col-md-4" style="margin: auto;">
+                    <a href="http://www.seaskylight.com/"><img src="src/assets/seasky_logo.jpg" class="card-img"
+                            alt="..."></a>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">Data Analyst Intern</h3>
+                        <div>Sea Sky</div>
+                        <p class="card-text text-muted">Jul 2018 - Aug 2018</p>
+                        <p class="card-text">
+                            <ul>
+                                <li>Improved quality and efficieny in process of producing data analysis report by
+                                    making a how-to guide.</li>
+                                <li>Carried out research in data visulization using R, generating some Shenzhen
+                                    choropleth maps.</li>
+                            </ul>
+                        </p>
+                        <div class="tags">
+                            <span class="tag">r</span>
+                            <span class="tag">data analysis</span>
+                            <span class="tag">shiny</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="event" class="container-md pl-2 pr-2">
+        <span class="sec-header">Event & Award</span>
+        <div id="photos" class="row mt-3">
+            <div class="col-md-4">
+                <p>Merit in APICTA Award 2019</p>
+                <img onclick="magnify($(this).attr('src'))" src="src/assets/apicta_award.jpg">
+            </div>
+            <div class="col-md-4">
+                <p>1rt place in InnoServe 2019</p>
+                <img onclick="magnify($(this).attr('src'))" src="src/assets/innoserve.jpg">
+            </div>
+            <div class="col-md-4">
+                <p>Microsoft Award in NASA Space Apps Challenge 2019</p>
+                <img onclick="magnify($(this).attr('src'))" src="src/assets/nasa-hack.jpeg">
+            </div>
+        </div>
+    </div>
+    <div id="work" class="container-md pl-2 pr-2">
+        <span class="sec-header">Work</span>
+        <div class="row">
+            <div class="col-md-5 mt-3">
+                <a href="https://github.com/h164654156465/thinkord"><img
+                        src="https://gh-card.dev/repos/h164654156465/thinkord.svg?fullname"></a>
+            </div>
+            <div class="col-md-5 mt-3">
+                <a href="https://github.com/h164654156465/ds-apps"><img
+                        src="https://gh-card.dev/repos/h164654156465/ds-apps.svg?fullname"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 mt-3">
+                <a href="https://github.com/h164654156465/realtime-face-detection-azure"><img
+                        src="https://gh-card.dev/repos/h164654156465/realtime-face-detection-azure.svg?fullname"></a>
+            </div>
+            <div class="col-md-5 mt-3">
+                <a href="https://github.com/h164654156465/azure-speech-service-suite"><img
+                        src="https://gh-card.dev/repos/h164654156465/azure-speech-service-suite.svg?fullname"></a>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="container-md pl-2 pr-2">
+        <span class="sec-header">Contact</span>
+        <table>
+            <tr>
+                <td>
+                    <div id="inner_div">
+                        <table id="inner_table">
+                            <tr>
+                                <td><i class="fas fa-phone"></i> &nbsp; +886 978 209 166</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-at"></i> &nbsp; h164654156465@outlook.com</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-fax"></i> &nbsp; +886 337 2155</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        8F., No. 83, Sec. 1, Sanmin Rd., Taoyuan Dist., Taoyuan City 330, Taiwan
+                                        (R.O.C.)
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                    <form id="contact_form" action="https://formspree.io/xzbdewoo" method="POST">
+                        <input name="_replyto" type="email" placeholder="email" required>
+                        <input name="name" type="text" placeholder="name" required><br>
+                        <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
+                        <input id="btn_send" type="submit" class="btn_one" value="Send">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer">
+        Inspired by <br>
+        <a href="https://imfunniee.github.io">imfunniee</a> work <br>
+        © Martin Lu 2019
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="src/index.js" type="text/javascript"></script>
+</body>
+
+</html>

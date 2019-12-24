@@ -48,18 +48,6 @@ header {
     z-index: 2;
 }
 
-header table {
-    width: 100%;
-}
-
-#logo {
-    width: 20%;
-}
-
-#navigation {
-    width: 80%;
-}
-
 #magnify {
     width: 100vw;
     height: 100vh;
@@ -94,7 +82,7 @@ header table {
 }
 
 #logo {
-    font-size: 24px;
+    font-size: 30px;
     color: #0078D4;
 }
 
@@ -107,7 +95,7 @@ header table {
     text-decoration: none;
     padding: 5px 10px;
     border-bottom: 2px solid transparent;
-    margin-right: 4vw;
+    margin-right: 2vw;
     transition: 0.4s ease-in-out;
 }
 
@@ -117,7 +105,7 @@ header table {
 
 #top_part {
     width: 100%;
-    border: 2vh solid #fff;
+    border: 1vh solid #fff;
 }
 
 #intro {
@@ -135,16 +123,6 @@ header table {
     word-wrap: break-word;
 }
 
-#intro table {
-    width: 70%;
-    margin-top: 4vh;
-}
-
-#intro table tr td {
-    width: 20% !important;
-    text-align: left;
-}
-
 .social {
     color: #0078D4;
     font-size: 23px;
@@ -153,7 +131,7 @@ header table {
     background: transparent;
     transition: 0.4s ease-in-out;
     font-weight: bold;
-    margin: 0px 8px;
+    margin: 0px 0px;
 }
 
 .social:hover {
@@ -170,7 +148,7 @@ header table {
     background: #fff;
     border: 3px solid rgb(0, 120, 212);
     padding: 8px 40px;
-    width: 60%;
+    width: 50%;
     border-radius: 80px;
     font-weight: bold;
     margin: 2vh 0px;
@@ -437,22 +415,25 @@ header table {
         padding: 4vh 2vw;
         position: absolute;
     }
-    #header table tr td {
-        width: 100%;
-        display: block;
-        text-align: center;
-        padding: 15px 0px;
-    }
     #navigation a {
         color: #000;
     }
 }
 
 @media (min-width: 801px) {
-    #last-a {
-        margin-right: 15px;
-    }
     .btn_one {
         font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1500px;
+    }
+    #header {
+        max-width: 1500px;
+    }
+    .row {
+        max-width: 1500px;
     }
 }

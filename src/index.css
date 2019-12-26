@@ -37,9 +37,14 @@ body {
     }
 }
 
+.header-spacer {
+    width: 100%;
+    height: 25px;
+}
+
 header {
     width: 100vw;
-    padding: 6vh 4vw;
+    padding: 2vh 4vw;
     position: fixed;
     font-weight: bold;
     background: transparent;
@@ -82,7 +87,7 @@ header {
 }
 
 #logo {
-    font-size: 30px;
+    font-size: 50px;
     color: #0078D4;
 }
 
@@ -93,7 +98,7 @@ header {
 #navigation a {
     color: inherit;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 10px 10px;
     border-bottom: 2px solid transparent;
     margin-right: 2vw;
     transition: 0.4s ease-in-out;
@@ -104,12 +109,11 @@ header {
 }
 
 #top_part {
-    width: 100%;
     border: 1vh solid #fff;
 }
 
 #intro {
-    width: 84% !important;
+    width: 84%;
     height: 95vh;
     display: flex;
     flex-direction: column;
@@ -125,13 +129,12 @@ header {
 
 .social {
     color: #0078D4;
-    font-size: 23px;
-    padding: 12px 17px;
+    font-size: 27px;
+    padding: 11px 17px;
     border-radius: 50%;
     background: transparent;
     transition: 0.4s ease-in-out;
     font-weight: bold;
-    margin: 0px 0px;
 }
 
 .social:hover {
@@ -345,6 +348,28 @@ header {
     background: rgba(0, 0, 0, 0.8);
 }
 
+@media (max-width: 540px) {
+    #logo {
+        font-size: 250%;
+        text-align: center;
+    }
+    #navigation {
+        text-align: center;
+    }
+    #top_part {
+        text-align: center;
+        height: 70vh;
+    }
+    #intro {
+        width: 100%;
+        padding: 50px 4%;
+        text-align: center;
+    }
+    #contact_form {
+        text-align: center;
+    }
+}
+
 @media (max-width: 800px) {
     #photos {
         columns: 1;
@@ -363,24 +388,13 @@ header {
     #top_part {
         border: 0px;
     }
-    #top_part tr td {
-        width: 100%;
-        text-align: center;
-    }
-    #intro {
-        width: 92% !important;
+    /* #intro {
+        width: 92%;
         height: 75vh;
         padding-top: 20vh !important;
         text-align: center;
         padding: 0px 4%;
-    }
-    #intro table {
-        width: 100%;
-        margin-top: 6vh;
-    }
-    #intro table tr td {
-        text-align: center;
-    }
+    } */
     .btn_one {
         padding: 6px 30px;
         width: 40%;
@@ -410,10 +424,10 @@ header {
         width: 90%;
     }
     header {
-        width: 96vw;
+        width: 100vw;
         background: #fff;
         padding: 4vh 2vw;
-        position: absolute;
+        position: fixed;
     }
     #navigation a {
         color: #000;
